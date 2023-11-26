@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* suavização de fonte */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+#app{
+  display: grid;
+  grid-template-rows: 1fr 500px 1fr;
+  row-gap: 15px;
+}
+
+header{
+  background-color: darkmagenta;
+}
+
+main{
+  background-color: orangered;
+}
+
+footer{
+  background-color: greenyellow;
+}
