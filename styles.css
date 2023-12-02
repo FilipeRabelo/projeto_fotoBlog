@@ -143,6 +143,8 @@ main h1{
   /*transition-timing-function: ease-in-out;*/
   /*transition-delay: 0.3s;*/
 
+  display: block;
+
 }
 
 .item img:hover{
@@ -184,4 +186,59 @@ footer p{
   padding: 0.5rem;
   font-weight: 600;
 }
+
+/* ANIMAÇÔES */
+
+header{
+  --starty: -100%;
+  animation: move 1s;
+}
+
+footer{
+  --starty: 100%;
+  animation: move 1s;
+}
+
+main{
+  animation: movex 1s;
+}
+
+.item{
+  --delay: .4s;
+  animation: aparecer .4s var(--delay) backwards;
+}
+
+@keyframes move {   /* move - movimentar */
+  from{
+    transform: translateY(var(--starty));
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50%{
+    transform: scale(1.2);
+  }
+}
+
+@keyframes movex {
+  from{
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
