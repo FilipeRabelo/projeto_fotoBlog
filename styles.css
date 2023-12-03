@@ -28,6 +28,7 @@ body{
   font-size: 1.6rem; /* 16px */
   background-color: var(--color-base-white);
   color: var(--color-base-gray-900);
+  /*grid-template-columns: minmax(250px, 1fr);*/
 }
 
 
@@ -35,9 +36,15 @@ body{
   display: grid;
   height: 100vh;
   grid-template-rows: max-content 1fr max-content;
+
+  grid-template-columns: minmax(250px, 1fr);
+
 }
 
 .container{
+
+  grid-template-columns: minmax(250px, 1fr);
+
   padding: 1.6rem 3.2rem;
   width: min(112rem, 100%);
   margin: 0 auto;
@@ -233,21 +240,25 @@ main{
 
 
 
-@media (max-width: 768px) {
-  #app{
-    grid-template-columns: 1fr; /* GRID VAO OCUPA APENAS UMA COLUNA */
-  }
 
-  html{
-    font-size: 87.5%;
+/*----------------------------*/
+
+
+/* Add media query for mobile styles */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row; /* Revert to row for larger screens */
   }
 }
 
-
-
-
-
-
+/* Add media query for mobile styles */
+@media (max-width: 767px) {
+  header,
+  nav,
+  nav ul {
+    gap: 1rem; /* Adjust gap for smaller screens */
+  }
+}
 
 
 
