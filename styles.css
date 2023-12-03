@@ -272,13 +272,24 @@ main{
     gap: 1rem; /* Adjust gap for smaller screens */
   }
 
+  .details{
+    padding-left: .5rem;
+    padding-bottom: 0;
+    padding-top: .5rem;
+  }
+
   .details h2{
-    font-size: 1.3rem; /* Adjust gap for smaller screens */
-    text-align: center;
+    font-size: 1.0rem; /* Adjust gap for smaller screens */
+
+    /*color: orangered;*/
+  }
+
+  .tags{
+    padding-bottom: .5rem;
   }
 
   .tags span{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .container h1{
