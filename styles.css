@@ -19,6 +19,17 @@
 
 }
 
+/*:root {*/
+/*  font-size: 62.5%;*/
+
+/*  --hue: 100;*/
+/*  --color-base-white: hsl(0, 0%, 100%);*/
+/*  --color-base-gray-100: hsl(0, 0%, 96%);*/
+/*  --color-base-gray-300: hsl(var(--hue), 60%, 58%);*/
+/*  --color-base-gray-500: hsl(0, 0%, 24%);*/
+/*  --color-base-gray-900: hsl(var(--hue), 60%, 20%);*/
+/*}*/
+
 html, body, input {
   font-family: 'Mulish', sans-serif;
 }
@@ -241,6 +252,8 @@ main{
 
 
 
+
+
 /*----------------------------*/
 
 
@@ -255,13 +268,20 @@ main{
 @media (max-width: 767px) {
   header,
   nav,
-  nav ul {
+  nav ul{
     gap: 1rem; /* Adjust gap for smaller screens */
   }
+
+  .details h2{
+    font-size: 1.3rem; /* Adjust gap for smaller screens */
+    text-align: center;
+  }
+
+  .tags span{
+    font-size: 0.8rem;
+  }
+
+  .container h1{
+    font-size: 2rem;
+  }
 }
-
-
-
-
-
-
