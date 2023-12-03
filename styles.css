@@ -233,6 +233,18 @@ main{
 
 
 
+@media (max-width: 768px) {
+  #app{
+    grid-template-columns: 1fr; /* GRID VAO OCUPA APENAS UMA COLUNA */
+  }
+
+  html{
+    font-size: 87.5%;
+  }
+}
+
+
+
 
 
 
