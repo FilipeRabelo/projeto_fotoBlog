@@ -265,7 +265,7 @@ main{
 }
 
 /* Add media query for mobile styles */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   header,
   nav,
   nav ul{
@@ -273,7 +273,7 @@ main{
   }
 
   .details{
-    padding-left: .5rem;
+    padding-left: .2rem;
     padding-bottom: 0;
     padding-top: .5rem;
   }
