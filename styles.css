@@ -295,4 +295,7 @@ main{
   .container h1{
     font-size: 2rem;
   }
-}
+
+  footer{
+    background-attachment: fixed
+  }
